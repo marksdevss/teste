@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamentos de Animes e Mangás</title>
+    <link rel="stylesheet" href="lanca.css">
+</head>
+<body>
+    <header>
+        <h1>Lançamentos de Animes e Mangás</h1>
+        <nav>
+            <a href="ANIME-LISTS.html">Home</a>
+            <a href="BibliotecaList.html">Minha Biblioteca</a>
+            <a href="Wishlist.html">Lista de Desejos</a>
+        </nav>
+    </header>
+    <main>
+        <div class="filter-controls">
+            <input type="text" id="search-input" placeholder="Pesquise um anime ou mangá...">
+            <button onclick="searchReleases()">Pesquisar</button>
+            <button onclick="fetchReleases('anime')">Filtrar Animes</button>
+            <button onclick="fetchReleases('manga')">Filtrar Mangás</button>
+            <button onclick="fetchReleases('all')">Mostrar Todos</button>
+        </div>
+        <div id="releases-container">
+            <!-- Lançamentos serão exibidos aqui -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Biblioteca de Animes e Mangás</p>
+    </footer>
+    <script src="releases.js"></script>
+</body>
+</html>

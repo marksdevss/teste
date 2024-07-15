@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <header>
+        <h1>Seção de Chat</h1>
+    </header>
+    <main>
+        <div id="chat-container">
+            <div id="messages"></div>
+            <form id="message-form">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem..." required>
+                <input type="file" id="file-input" accept="image/*,video/*,audio/*">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <script src="chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Board</title>
+    <link rel="stylesheet" href="discussao.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <nav>
+            <a href="explore.html">Explore</a>
+            <a href=""></a>
+            <a href="notifications.html">Notifications</a>
+            <a href="messages.html">Messages</a>
+            <a href="profile.html">Profile</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+    </aside>
+    <main>
+        <div class="post-container">
+            <h2>Share Your Thoughts</h2>
+            <form id="postForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <select id="category">
+                    <option value="anime">Anime</option>
+                    <option value="manga">Manga</option>
+                    <option value="manga">Jogos</option>
+                    <option value="other">Outros</option>
+                </select>
+                <textarea id="content" placeholder="Write your post here..." required></textarea>
+                <input type="file" id="file-input">
+                <button type="submit">Post</button>
+            </form>
+        </div>
+        <div id="feed" class="feed">
+            <!-- Posts serão injetados aqui -->
+        </div>
+    </main>
+    <aside class="trending">
+        <h2>Trending Topics</h2>
+        <div id="trendingTopics">
+            <!-- Tópicos em alta serão injetados aqui -->
+        </div>
+    </aside>
+    <br>
+        <!-- Modals -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-body">
+                <!-- Conteúdo do modal será carregado aqui -->
+            </div>
+        </div>
+    </div>
+    <script src="discussoes.js"></script>
+</body>
+</html>

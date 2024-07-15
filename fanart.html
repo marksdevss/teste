@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Fan Art</title>
+    <link rel="stylesheet" href="fanart.css">
+</head>
+<body>
+    <header>
+        <h1>Área de Fan Art</h1>
+        <nav>
+            <a href="ANIME-LISTS.html">Home</a>
+            <a href="explore.html">Explorar</a>
+        </nav>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Compartilhe sua Fan Art</h2>
+            <form id="upload-form">
+                <input type="text" id="art-title" placeholder="Título da Arte" required>
+                <textarea id="art-description" placeholder="Descrição da Arte" required></textarea>
+                <input type="file" id="art-file" accept="image/*" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="gallery-section">
+            <h2>Galeria de Fan Art</h2>
+            <div id="gallery"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Biblioteca de Animes e Mangás</p>
+    </footer>
+    <script src="fanart.js"></script>
+</body>
+</html>

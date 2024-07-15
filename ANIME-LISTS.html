@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> OtakuLibrary</title>
+    <link rel="stylesheet" href="animeLi.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <audio id="background-audio" autoplay loop>
+            <source src="lofi.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <h1>OtakuLibrary</h1>
+        <br>
+        <nav>
+            <a href="BibliotecaList.html" onclick="showLibrary()">Ver Minha Biblioteca</a>
+            <a href="Lista-Desejos.html">Minha Lista de Desejos</a>
+            <a href="RecomendacoesAM.html">Onde assistir</a>
+            <a href="LeituraGeek.html">Leia Mangás</a>
+            <a href="CineGEEK.html">Teste BeTA</a>
+            <a href="trailers.html">Trailers</a>
+            <a href="Lancamentos.html">Me Atualize!</a>
+            <a href="Register.html">Registrar</a>
+            <a href="LoginOtk.html">Logar</a>
+            <a href="EditarMeuPerfil.html">Editar Meu Perfil</a>
+            <a href="chat.html">Bate-Papo</a>
+            <a href="ShoppingOTK.html">Shopping</a>
+            <a href="Comunidade.html">Comunidade</a>
+            <a href="tierlist.html">Tier List</a>
+            <div id="user-info" href="EditarMeuPerfil.html
+            ">
+        </div>
+        </nav>
+        <form id="search-form">
+            <select id="search-type">
+                <option value="anime">Anime</option>
+                <option value="manga">Mangá</option>
+            </select>
+            <input type="text" id="search-input" placeholder="Procure por um anime ou mangá...">
+            <button type="submit">Buscar</button>
+            <button type="button" id="clear-button" onclick="clearSearch()">Limpar Busca</button>
+        </form>
+        
+    </header>
+    <div class="background-image"></div>    
+    <main id="results-container">
+        <!-- Resultados de Animes e Mangás serão exibidos aqui -->
+    </main>
+    <!-- <section id="recommendations">
+        <h2>Recomendações Personalizadas</h2>
+        <div id="recommendations-container">
+             Recomendações serão exibidas aqui -->
+        </div>
+    </section> 
+    <!-- <section id="release-calendar">
+        <h2>Calendário de Lançamentos</h2>
+        <div id="calendar-container">
+            <!-- Lançamentos serão exibidos aqui -->
+     <!--    </div> 
+ <!--</section> -->
+    <div id="character-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closePopup()">&times;</span>
+            <div id="popup-characters-container"></div>
+        </div>
+    </div>
+    <div id="rating-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closeRatingPopup()">&times;</span>
+            <h3>Avaliar Anime/Mangá</h3>
+            <textarea id="comment-input" placeholder="Deixe seu comentário..."></textarea>
+            <div>
+    <div id="status-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" onclick="closeStatusPopup()">&times;</span>
+            <h3>Escolha o status</h3>
+            <select id="status-select">
+                <option value="assistido">Assistido</option>
+                <option value="ainda-irei-assistir">Ainda Irei Assistir</option>
+                <option value="nao-terminei">Não Terminei</option>
+            </select>
+            <button onclick="saveToLibrary()">Salvar</button>
+        </div>
+    <script src="AnimeList.js"></script>
+    <script src="recomandacoes.js"></script>
+    <script src="library.js"></script>
+    <script src="calendario.js"></script>
+</body>
+</html>

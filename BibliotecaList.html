@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Biblioteca</title>
+    <link rel="stylesheet" href="BibList.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Biblioteca</h1>
+        <a href="ANIME-LISTS.html">Voltar</a>
+    </header>
+    <div class="filter-container">
+        <label for="filter-type">Filtrar por: </label>
+        <select id="filter-type">
+            <option value="all">Todos</option>
+            <option value="anime">Animes</option>
+            <option value="manga">Mangás</option>
+        </select>
+    </div>
+    <main>
+        <div class="library-container" id="library-container">
+            <!-- Itens da biblioteca serão injetados aqui -->
+        </div>
+    </main>
+    <script src="library.js"></script>
+</body>
+</html>
+
+</html>

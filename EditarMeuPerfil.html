@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <link rel="stylesheet" href="EditarMeuPerfil.css">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <h1>Editar Perfil</h1>
+        <form id="editProfileForm">
+            <img id="avatarPreview" src="" alt="Avatar" style="width: 100px; height: 100px; border-radius: 50%;">
+            <input type="file" id="avatar" accept="image/*">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password">
+            <input type="text" id="email" placeholder="Email">
+            <input type="text" id="fullName" placeholder="Full Name">
+            <button type="submit">Salvar Alterações</button>
+            <a href="recuperar-senha.html">Recuperar Minha Senha</a>
+            <a href="redefinir-senha.html">Redefinir Minha Senha</a>
+        </form>
+    </div>
+    <script src="editProfile.js"></script>
+</body>
+</html>

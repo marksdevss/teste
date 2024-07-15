@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de Mangás</title>
+    <link rel="stylesheet" href="LeituraGeek.css">
+</head>
+<body>
+    <header>
+        <h1>Leitor de Mangás</h1>
+        <nav>
+            <a href="ANIME-LISTS.html">Home</a>
+            <a href="BibliotecaList.html">Minha Biblioteca</a>
+            <a href="RecomendacoesAM.html">Recomendações</a>
+            <a href="trailers.html">Trailers</a>
+        </nav>
+    </header>
+    <main>
+        <section id="search-section">
+            <h2>Buscar Mangá</h2>
+            <input type="text" id="search-input" placeholder="Digite o nome do mangá">
+            <button onclick="searchManga()">Buscar</button>
+        </section>
+        <section id="manga-list">
+            <h2>Lista de Mangás</h2>
+            <div id="mangas"></div>
+        </section>
+        <section id="chapter-list" style="display: none;">
+            <h2>Capítulos de <span id="manga-title"></span></h2>
+            <div id="chapters"></div>
+        </section>
+        <section id="chapter-reader" style="display: none;">
+            <h2>Lendo <span id="current-chapter-title"></span></h2>
+            <div id="chapter-content"></div>
+            <button onclick="goBackToChapters()">Voltar para Capítulos</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Biblioteca de Animes e Mangás</p>
+    </footer>
+    <script src="manga.js"></script>
+</body>
+</html>

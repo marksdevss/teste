@@ -1,0 +1,357 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ccc;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode header {
+    background-color: #1a1a1a;
+    color: #ccc;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #34495e;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode nav {
+    background-color: #2a2a2a;
+}
+
+nav a {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+body.dark-mode nav a {
+    background-color: #3a3a3a;
+    color: #ccc;
+}
+
+form {
+    margin-top: 10px;
+    text-align: center;
+}
+
+select, input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode select, body.dark-mode input[type="text"], body.dark-mode input[type="password"] {
+    background-color: #2a2a2a;
+    color: #ccc;
+    border: 1px solid #444;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+body.dark-mode button {
+    background-color: #444;
+    color: #ccc;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode main {
+    background-color: #1e1e1e;
+}
+
+.anime-card, .manga-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    max-width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.anime-card:hover, .manga-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .anime-card, body.dark-mode .manga-card {
+    background-color: #2a2a2a;
+    color: #ccc;
+}
+
+.anime-card img, .manga-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.anime-card h3, .manga-card h3 {
+    margin: 15px 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+body.dark-mode .anime-card h3, body.dark-mode .manga-card h3 {
+    color: #ccc;
+}
+
+.anime-card p, .manga-card p {
+    margin: 0 10px 15px 10px;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+
+body.dark-mode .anime-card p, body.dark-mode .manga-card p {
+    color: #aaa;
+}
+
+.anime-card button, .manga-card button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.anime-card button:hover, .manga-card button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+body.dark-mode .anime-card button, body.dark-mode .manga-card button {
+    background-color: #3a3a3a;
+    color: #ccc;
+}
+
+.anime-card footer, .manga-card footer {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background-color: #fafafa;
+    border-radius: 0 0 15px 15px;
+}
+
+body.dark-mode .anime-card footer, body.dark-mode .manga-card footer {
+    background-color: #2a2a2a;
+    color: #ccc;
+}
+
+/* The Popup (background) */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Popup Content */
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+body.dark-mode .popup-content {
+    background-color: #2a2a2a;
+    color: #ccc;
+}
+
+/* Close Button */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body.dark-mode .close-button {
+    color: #ccc;
+}
+
+/* Character Item */
+.character-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.character-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.characters-container {
+    margin-top: 10px;
+}
+
+body.dark-mode .character-item {
+    color: #ccc;
+}
+
+#release-calendar {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+body.dark-mode #release-calendar {
+    background-color: #2a2a2a;
+    color: #ccc;
+}
+
+#release-calendar h2 {
+    margin-bottom: 20px;
+}
+
+#calendar-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.release-item {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0,0,0.1);
+}
+
+audio {
+    display: none;
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
